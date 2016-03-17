@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="false" useMultiPlatformConfig="false" version="1">
+  <includeClasses>
+    <classEntry path="gauthier.net.rtmp.Admin"/>
+    <classEntry path="gauthier.net.rtmp.RTMPConnection"/>
+    <classEntry path="gauthier.net.rtmp.RTMPProtocol"/>
+    <classEntry path="gauthier.net.rtmp.RTMPUri"/>
+    <classEntry path="gauthier.net.rtmp.config.IRTMPConfig"/>
+    <classEntry path="gauthier.net.rtmp.config.JSONConfig"/>
+    <classEntry path="gauthier.net.rtmp.config.RTMPConfigFactory"/>
+    <classEntry path="gauthier.net.rtmp.config.RTMPConfigType"/>
+    <classEntry path="gauthier.net.rtmp.config.XMLConfig"/>
+    <classEntry path="gauthier.net.rtmp.errors.AdminError"/>
+    <classEntry path="gauthier.net.rtmp.events.AttemptEvent"/>
+    <classEntry path="gauthier.net.rtmp.events.BWEvent"/>
+    <classEntry path="gauthier.net.rtmp.events.IRTMPEventManager"/>
+    <classEntry path="gauthier.net.rtmp.events.RTMPEvent"/>
+    <classEntry path="gauthier.net.rtmp.events.RTMPEventManager"/>
+    <classEntry path="gauthier.net.rtmp.events.RTMPStreamEvent"/>
+    <classEntry path="gauthier.net.rtmp.events.SharedEvent"/>
+    <classEntry path="gauthier.net.rtmp.info.Attempt"/>
+    <classEntry path="gauthier.net.rtmp.info.Bandwidth"/>
+    <classEntry path="gauthier.net.rtmp.info.Info"/>
+    <classEntry path="gauthier.net.rtmp.info.MetaDataObject"/>
+    <classEntry path="gauthier.net.rtmp.sharedobject.RTMPShared"/>
+    <classEntry path="gauthier.net.rtmp.sharedobject.RTMPSharedMode"/>
+    <classEntry path="gauthier.net.rtmp.stream.RTMPStream"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>

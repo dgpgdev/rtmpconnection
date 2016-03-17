@@ -1,0 +1,284 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- saved from url=(0014)about:internet --><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="../../../style.css" type="text/css" media="screen"><link rel="stylesheet" href="../../../print.css" type="text/css" media="print"><link rel="stylesheet" href="../../../override.css" type="text/css"><meta name="keywords" content="RTMPConnection,gauthier.net.rtmp.RTMPConnection,ADMIN_APPLICATION,DEFAULT_ADMIN_PORT,DEFAULT_IP,DEFAULT_PORT,DEFAULT_STRATUS_IP,RTMFP,RTMP,RTMPE,RTMPS,RTMPT,RTMPTE,URI,admin,adminMode,application,application,autoConnect,clientParameters,configType,configuration,delay,devKey,devKey,ip,ip,maxAttempt,params,port,port,rtmpEventManager,rtmpURI,addClientParam,checkBandWidth,closeByAction,connection,onBWCheck,onBWDone,verifString"><title>gauthier.net.rtmp.RTMPConnection</title></head><body><script language="javascript" type="text/javascript" src="../../../asdoc.js"></script><script language="javascript" type="text/javascript" src="../../../help.js"></script><script language="javascript" type="text/javascript" src="../../../cookies.js"></script><script language="javascript" type="text/javascript"><!--
+				asdocTitle = 'RTMPConnection - API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<script type="text/javascript">
+			scrollToNameAnchor();
+		</script><table class="titleTable" cellpadding="0" cellspacing="0" id="titleTable" style="display:none"><tr><td class="titleTableTitle" align="left">API Documentation</td><td class="titleTableTopNav" align="right"><a href="../../../package-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Packages</a>&nbsp;|&nbsp;<a href="../../../class-summary.html" onclick="loadClassListFrame('../../../all-classes.html')">All Classes</a>&nbsp;|&nbsp;<a href="../../../all-index-A.html" onclick="loadClassListFrame('../../../index-list.html')">Index</a>&nbsp;|&nbsp;<a id="framesLink1" href="../../../index.html?gauthier/net/rtmp/RTMPConnection.html&amp;gauthier/net/rtmp/class-list.html">Frames</a><a id="noFramesLink1" style="display:none" href="" onclick="parent.location=document.location"> No Frames </a></td><td class="titleTableLogo" align="right" rowspan="3"><img src="../../../images/logo.jpg" class="logoImage" alt=" Adobe Logo " title=" Adobe Logo "></td></tr><tr class="titleTableRow2"><td class="titleTableSubTitle" id="subTitle" align="left">RTMPConnection</td><td class="titleTableSubNav" id="subNav" align="right"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#eventSummary">Events</a></td></tr><tr class="titleTableRow3"><td colspan="3">&nbsp;</td></tr></table><script language="javascript" type="text/javascript" xml:space="preserve">
+				<!--
+				
+					if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("RTMPConnection"); titleBar_setSubNav(false,true,false,false,false,false,true,false,true,false,false	,false,false,false,false,false);}	
+				-->
+			</script><div xmlns:fn="http://www.w3.org/2005/xpath-functions" class="MainContent"><table class="classHeaderTable" cellpadding="0" cellspacing="0"><tr><td class="classHeaderTableLabel">Package</td><td><a href="package-detail.html" onclick="javascript:loadClassListFrame('class-list.html')">gauthier.net.rtmp</a></td></tr><tr><td class="classHeaderTableLabel">Class</td><td class="classSignature">public  class  RTMPConnection</td></tr><tr><td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">RTMPConnection  <img src="../../../images/inherit-arrow.gif" title="Inheritance" alt="Inheritance" class="inheritArrow"> flash.net.NetConnection</td></tr></table><p></p><p></p><p></p>
+	Cette class etend la class NetConnection et permet une connexion simplifié 
+	au flash media server
+	
+	<p></p><p><span class="classHeaderTableLabel">See also</span></p><div class="seeAlso">flash.net.NetConnection</div><br/><hr></div><a name="propertySummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Properties</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableProperty"><tr><th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#adminMode" class="signatureLink">adminMode</a> : Boolean<div class="summaryTableDescription">[read-only] 
+		 Propriété qui definit si nous nous connectons en administrateur
+		 </div></td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#application" class="signatureLink">application</a> : String<div class="summaryTableDescription">
+		 Définit le nom de l'application server sur laquelle vous voulez vous connecter.</div></td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#autoConnect" class="signatureLink">autoConnect</a> : Boolean<div class="summaryTableDescription">[read-only] 
+		 Definit si l'on doit se reconnecter des que l'on detect une deconnection.</div></td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#clientParameters" class="signatureLink">clientParameters</a> : Array<div class="summaryTableDescription">[read-only] 
+		 un tableau contenant l'ensemble des paramètres que nous passerons 
+		 lors de la connexion au flash media server
+		 </div></td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#configType" class="signatureLink">configType</a> : String<div class="summaryTableDescription"></div></td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#configuration" class="signatureLink">configuration</a> : Object<div class="summaryTableDescription">
+		 Charge les données dans le configObject pour configurer la connexion
+		 </div></td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#delay" class="signatureLink">delay</a> : Number<div class="summaryTableDescription">
+		 Definit le temps en secondes entre le retour du netstatus et l'appel à la connection
+		 </div></td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#devKey" class="signatureLink">devKey</a> : String<div class="summaryTableDescription">
+		 Définit la clé permettant de se connecter au service Stratus (en Béta)
+		 </div></td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#ip" class="signatureLink">ip</a> : String<div class="summaryTableDescription">
+		Définit l'ip de connexion
+		</div></td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#maxAttempt" class="signatureLink">maxAttempt</a> : int<div class="summaryTableDescription">
+		 Le nombre maximum de tentative de reconnexion.</div></td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#params" class="signatureLink">params</a> : Array<div class="summaryTableDescription">[read-only] 
+		 Récupère un tableau contenant l'ensemble des paramètre a envoyer a l'application lors de la connexion
+		 </div></td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#port" class="signatureLink">port</a> : uint<div class="summaryTableDescription">
+		 Définit le port de connexion
+		 </div></td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#rtmpEventManager" class="signatureLink">rtmpEventManager</a> : <a href="../../../gauthier/net/rtmp/events/IRTMPEventManager.html">IRTMPEventManager</a><div class="summaryTableDescription">
+		 Propriété contenant notre objet IRTMPEventManager.</div></td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a href="#rtmpURI" class="signatureLink">rtmpURI</a> : <a href="../../../gauthier/net/rtmp/RTMPUri.html">RTMPUri</a><div class="summaryTableDescription">
+		 assigne un object RTMPUri à la connexion, 
+		 si vous ne specifié d'objet RTMPUri
+		 il sera crée automatiquement lors de la création
+		 
+		 </div></td><td class="summaryTableOwnerCol">RTMPConnection</td></tr></table></div><a name="methodSummary"></a><div class="summarySection"><div class="summaryTableTitle">Public Methods </div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableMethod"><tr><th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#RTMPConnection()" class="signatureLink">RTMPConnection</a>(applicationName:String, ip:String = localhost, port:uint = 1935, protocol:String)</div><div class="summaryTableDescription">
+		 Constructeur
+		 Initialise l'objet RTMPConnection
+		 </div></td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#addClientParam()" class="signatureLink">addClientParam</a>(... parameters):void</div><div class="summaryTableDescription">
+		 Ajoute un ou plusieurs parametre a la connection.</div></td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#checkBandWidth()" class="signatureLink">checkBandWidth</a>():void</div><div class="summaryTableDescription">
+	     Detect la bande passante depuis le client
+	     
+	     </div></td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#closeByAction()" class="signatureLink">closeByAction</a>():void</div><div class="summaryTableDescription">
+		 permet de couper une connection même en mode autoconnect.</div></td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#connection()" class="signatureLink">connection</a>(login:String = null, password:String = null):void</div><div class="summaryTableDescription">
+		 Methode qui permet de lancer la connection.</div></td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#onBWCheck()" class="signatureLink">onBWCheck</a>(... rest):Number</div><div class="summaryTableDescription">
+		 Method appele par le server lors d'une detection automatique, doit obligatoirement renvoyé un nombre
+		 </div></td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#onBWDone()" class="signatureLink">onBWDone</a>(... rest):void</div><div class="summaryTableDescription">
+	     Method appele par l'objet client du server lors d'une detection automatique 
+	     de la bande passante.</div></td><td class="summaryTableOwnerCol">RTMPConnection</td></tr></table></div><a name="eventSummary"></a><div class="summarySection"><div class="summaryTableTitle">Events</div><table cellspacing="0" cellpadding="3" class="summaryTable " id="summaryTableEvent"><tr><th>&nbsp;</th><th colspan="2">Event</th><th> Summary </th><th class="summaryTableOwnerCol">Defined By</th></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:attempt" class="signatureLink">attempt</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatch si l'autoconnect est declaré à chaque tentative de connexion.</td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:attempt_end" class="signatureLink">attempt_end</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatch si l'autoconnect est declaré une fois le maximum de tentative atteint.</td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:call_failed" class="signatureLink">call_failed</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatch quand l'appel a la method a échoué.</td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:closed" class="signatureLink">closed</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatch quand la connexion se ferme.</td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:failed" class="signatureLink">failed</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatch quand la connexion a échoué.</td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:on_bw" class="signatureLink">on_bw</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatch lors d'une detection automatique de la bande passante.</td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:rejected" class="signatureLink">rejected</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatch quand la connexion est rejeté.</td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:shutdown" class="signatureLink">shutdown</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatch quand l'application est dechargé.</td><td class="summaryTableOwnerCol">RTMPConnection</td></tr><tr class=""><td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><div class="summarySignature"><a href="#event:success" class="signatureLink">success</a></div></td><td class="summaryTableDescription summaryTableCol">Dispatch quand la connexion est reussit.</td><td class="summaryTableOwnerCol">RTMPConnection</td></tr></table></div><script language="javascript" type="text/javascript"><!--
+										showHideInherited();
+										--></script><div class="MainContent"><div class="detailSectionHeader">Property Detail</div><a name="propertyDetail"></a><a name="adminMode"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">adminMode</td><td class="detailHeaderType">property</td></tr></table><div class="detailBody"><code>adminMode:Boolean</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Propriété qui definit si nous nous connectons en administrateur
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get adminMode():Boolean</code><br/><p><span class="label">See also</span></p><div class="seeAlso"><a href="Admin.html" target="">Admin</a></div></div><a name="propertyDetail"></a><a name="application"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">application</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>application:String</code><p></p><p></p><p>
+		 Définit le nom de l'application server sur laquelle vous voulez vous connecter.
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get application():String</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set application(value:String):void</code><br/><p><span class="label">See also</span></p><div class="seeAlso"><a href="RTMPUri.html" target="">RTMPUri</a></div></div><a name="propertyDetail"></a><a name="autoConnect"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">autoConnect</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>autoConnect:Boolean</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Definit si l'on doit se reconnecter des que l'on detect une deconnection.
+		 <b>ATTENTION :</b>si vous désirez couper une connection volontairement, alors que la connexion est en autoConnect, vous devez appeler la methode closeByAction lors d'un appel a la methode close() directement. Sinon votre connection tentera de se reconnecter a nouveau.
+		 </p><p> The default value is <code>false</code>.</p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get autoConnect():Boolean</code><br/><p><span class="label">See also</span></p><div class="seeAlso"><a href="RTMPConnection.html#closeByAction" target="">closeByAction</a></div></div><a name="propertyDetail"></a><a name="clientParameters"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">clientParameters</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>clientParameters:Array</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 un tableau contenant l'ensemble des paramètres que nous passerons 
+		 lors de la connexion au flash media server
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get clientParameters():Array</code><br/></div><a name="propertyDetail"></a><a name="configType"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">configType</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>configType:String</code><p></p><p></p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get configType():String</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set configType(value:String):void</code><br/><p><span class="label">See also</span></p><div class="seeAlso">FMSConfigFactory</div></div><a name="propertyDetail"></a><a name="configuration"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">configuration</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>configuration:Object</code><p></p><p></p><p>
+		 Charge les données dans le configObject pour configurer la connexion
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get configuration():Object</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set configuration(value:Object):void</code><br/></div><a name="propertyDetail"></a><a name="delay"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">delay</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>delay:Number</code><p></p><p></p><p>
+		 Definit le temps en secondes entre le retour du netstatus et l'appel à la connection
+		 </p><p> The default value is <code>1 secondes</code>.</p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get delay():Number</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set delay(value:Number):void</code><br/></div><a name="propertyDetail"></a><a name="devKey"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">devKey</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>devKey:String</code><p></p><p></p><p>
+		 Définit la clé permettant de se connecter au service Stratus (en Béta)
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get devKey():String</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set devKey(value:String):void</code><br/><p><span class="label">See also</span></p><div class="seeAlso"><a href="RTMPUri.html" target="">RTMPUri</a></div></div><a name="propertyDetail"></a><a name="ip"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">ip</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>ip:String</code><p></p><p></p><p>
+		Définit l'ip de connexion
+		</p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get ip():String</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set ip(value:String):void</code><br/><p><span class="label">See also</span></p><div class="seeAlso"><a href="RTMPUri.html" target="">RTMPUri</a></div></div><a name="propertyDetail"></a><a name="maxAttempt"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">maxAttempt</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>maxAttempt:int</code><p></p><p></p><p>
+		 Le nombre maximum de tentative de reconnexion. si maxAttempt est definit sur -1 on tente de se connecter indefiniment jusqu'a ce que la connexion soit reussit. La connexion sera en mode autoConnect;
+		 </p><p> The default value is <code>3</code>.</p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get maxAttempt():int</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set maxAttempt(value:int):void</code><br/></div><a name="propertyDetail"></a><a name="params"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">params</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>params:Array</code>&nbsp;&nbsp;[read-only] <p></p><p></p><p>
+		 Récupère un tableau contenant l'ensemble des paramètre a envoyer a l'application lors de la connexion
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get params():Array</code><br/></div><a name="propertyDetail"></a><a name="port"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">port</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>port:uint</code><p></p><p></p><p>
+		 Définit le port de connexion
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get port():uint</code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set port(value:uint):void</code><br/><p><span class="label">See also</span></p><div class="seeAlso"><a href="RTMPUri.html" target="">RTMPUri</a></div></div><a name="propertyDetail"></a><a name="rtmpEventManager"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">rtmpEventManager</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>rtmpEventManager:<a href="../../../gauthier/net/rtmp/events/IRTMPEventManager.html">IRTMPEventManager</a></code><p></p><p></p><p>
+		 Propriété contenant notre objet IRTMPEventManager. Nous permet d'assigner un IRTMPEventManager différent si nous le désirons.
+		 </p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get rtmpEventManager():<a href="../../../gauthier/net/rtmp/events/IRTMPEventManager.html">IRTMPEventManager</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set rtmpEventManager(value:<a href="../../../gauthier/net/rtmp/events/IRTMPEventManager.html">IRTMPEventManager</a>):void</code><br/><p><span class="label">See also</span></p><div class="seeAlso"><a href="../../../gauthier/net/rtmp/events/IRTMPEventManager.html" target="">IRTMPEventManager</a></div>Implémentation 
+		 <pre>
+		  import gauthier.net.rtmp.RTMPConnection;
+		 
+		  var nc:RTMPConnection= new RTMPConnection();
+		 
+		  var monEventManager:MyFMSEventManager=new MyFMSEventManager();
+		 //assignation de mon eventmanager personnalisé a la connection;
+		  nc.rtmpEventManager=monEventManager;
+		 
+		 //declaration du client de la connection
+		  nc.client=this;
+		  nc.application="test/moninstance";
+		  nc.connection();
+		 
+		 //cette method sera appele a chaque fois que onStatus sera appele dans la class MyFMSEventManager
+		 function status(){
+		 	trace("method appele par mon eventmanager personnalisé");
+		 }
+		 
+		 </pre>
+		 </div><a name="propertyDetail"></a><a name="rtmpURI"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">rtmpURI</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code>rtmpURI:<a href="../../../gauthier/net/rtmp/RTMPUri.html">RTMPUri</a></code><p></p><p></p><p>
+		 assigne un object RTMPUri à la connexion, 
+		 si vous ne specifié d'objet RTMPUri
+		 il sera crée automatiquement lors de la création
+		 
+		 </p><p> The default value is <code>null</code>.</p><br/><span class="label"> Implementation </span><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function get rtmpURI():<a href="../../../gauthier/net/rtmp/RTMPUri.html">RTMPUri</a></code><br/><code>&nbsp;&nbsp;&nbsp;&nbsp;public function set rtmpURI(value:<a href="../../../gauthier/net/rtmp/RTMPUri.html">RTMPUri</a>):void</code><br/><p><span class="label">See also</span></p><div class="seeAlso"><a href="RTMPUri.html" target="">RTMPUri</a></div></div><a name="constructorDetail"></a><div class="detailSectionHeader">Constructor Detail</div><a name="RTMPConnection()"></a><a name="RTMPConnection(String,String,uint,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">RTMPConnection</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">Constructor</td></tr></table><div class="detailBody"><code>public function RTMPConnection(applicationName:String, ip:String = localhost, port:uint = 1935, protocol:String)</code><p></p><p>
+		 Constructeur
+		 Initialise l'objet RTMPConnection
+		 </p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">applicationName</span>:String</code> &mdash; l'ip de connexion du flash media server
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">ip</span>:String</code> (default = <code>localhost</code>)<code></code> &mdash; le nom de l'application
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">port</span>:uint</code> (default = <code>1935</code>)<code></code> &mdash; le port de connexion du flash media server
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">protocol</span>:String</code> (default = <code>NaN</code>)<code></code> &mdash; le protocole a utiliser pour se connecter
+		 
+		 </td></tr></table><p><span class="label">See also</span></p><div class="seeAlso"><a href="RTMPConnection.html#ip" target="">ip</a><br/><a href="RTMPConnection.html#application" target="">application</a><br/><a href="RTMPConnection.html#port" target="">port</a><br/>FlashMediaServerProtocol</div></div><a name="methodDetail"></a><div class="detailSectionHeader">Method Detail</div><a name="addClientParam()"></a><a name="addClientParam(restParam)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">addClientParam</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td></tr></table><div class="detailBody"><code> public function addClientParam(... parameters):void</code><p></p><p></p><p>
+		 Ajoute un ou plusieurs parametre a la connection.
+		 <p>
+		 Method qui ajoute un ou plusieurs parametres qui seront envoyé 
+		 
+		 lors de la connection au flash media server ce ci remplace l'ancienne methode qui consisté a faire :
+		 <code>
+		 	var nc:NetConnection = new NetConnection();
+		 nc.connect("rtmp://localhost/test/",<b>param 1</b>,<b>param 2</b>,<b>param 3</b>,<b>...</b>);
+		 </code>
+		 </p>
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code>... <span class="label">parameters</span></code> &mdash; un ou plusieurs parametres
+		 </td></tr></table></p><br/><span class="label"> Example </span><br/>
+		 <pre>
+		 var fmsc:RTMPConnection= new RTMPConnection();
+		 fmsc.addClientParam("what else",{login:"toto", mdp:"tata"},512);
+		 fmsc.addClientParam("helloworld");
+		 fmsc.connection("test");
+		 </pre>
+		 </div><a name="checkBandWidth()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">checkBandWidth</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function checkBandWidth():void</code><p></p><p></p><p>
+	     Detect la bande passante depuis le client
+	     
+	     </p><p><span class="label">See also</span></p><div class="seeAlso"><a href="../../../gauthier/net/rtmp/events/BWEvent.html" target="">BWEvent</a></div></div><a name="closeByAction()"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">closeByAction</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function closeByAction():void</code><p></p><p></p><p>
+		 permet de couper une connection même en mode autoconnect. 
+		 Cette methode doit etre appelé pour couper definitivement 
+		 la connection en mode AutoConnect.
+		 </p></div><a name="connection()"></a><a name="connection(String,String)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">connection</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function connection(login:String = null, password:String = null):void</code><p></p><p></p><p>
+		 Methode qui permet de lancer la connection. 
+		 
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code><span class="label">login</span>:String</code> (default = <code>null</code>)<code></code> &mdash; votre login d'administrateur
+		 </td></tr><tr><td class="paramSpacer">&nbsp;</td></tr><tr><td width="20px"></td><td><code><span class="label">password</span>:String</code> (default = <code>null</code>)<code></code> &mdash; votre mot de passe d'administrateur
+		 
+		 </td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="RTMPConnection.html#application" target="">application</a><br/><a href="RTMPConnection.html#ip" target="">ip</a><br/><a href="RTMPConnection.html#port" target="">port</a></div><br/><span class="label"> Example </span><br/>
+		 je tente de me connecter a l'application test, mon server fms en local
+		 <pre>
+		 var fmsc:RTMPConnection= new RTMPConnection();
+		 fmsc.application="test";
+		 fmsc.connection();
+		 </pre>
+		 
+		 
+		 <br/><span class="label"> Example </span><br/>
+		 je me connect a mon server distant sur le port 8888;
+		 <pre>
+		 var fmsc:RTMPConnection= new RTMPConnection("mon.server.com",8888);
+		 fmsc.port=8888;
+		 fmsc.application="test";
+		 fmsc.connection();
+		 </pre>
+		 
+		 
+		 <br/><span class="label"> Example </span><br/>
+		 je me connect en tant qu'administrateur à mon server distant sur le port 8888;
+		 <pre>
+		 var fmsc:RTMPConnection= new RTMPConnection("mon.server.com");
+		 fmsc.connection("monlogin","monpassword");
+		 </pre>
+		 
+		 
+		 </div><a name="onBWCheck()"></a><a name="onBWCheck(restParam)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">onBWCheck</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function onBWCheck(... rest):Number</code><p></p><p></p><p>
+		 Method appele par le server lors d'une detection automatique, doit obligatoirement renvoyé un nombre
+		 </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code>... <span class="label">rest</span></code></td></tr></table></p><p></p><span class="label">Returns</span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20"></td><td><code>Number</code> &mdash; 0
+		 </td></tr></table></div><a name="onBWDone()"></a><a name="onBWDone(restParam)"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">onBWDone</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><code> public function onBWDone(... rest):void</code><p></p><p></p><p>
+	     Method appele par l'objet client du server lors d'une detection automatique 
+	     de la bande passante.
+	     <p>
+	     Dispatch un event BWEvent. 
+	     
+	     <b>Attention</b> 
+	     si vous definnissez un objet client a votre objet RTMPConnection 
+	     vous devrez definir les fonctions onBWDone et onBWCheck dans votre objet 
+	     client si vous desirez utiliser la detection automatique de la bande passante 
+	     </p>
+	     
+	     </p><p><span class="label"> Parameters </span><table cellpadding="0" cellspacing="0" border="0"><tr><td width="20px"></td><td><code>... <span class="label">rest</span></code> &mdash; la vitesse de la bande passante en bytes
+	     </td></tr></table></p><p><span class="label">See also</span></p><div class="seeAlso"><a href="../../../gauthier/net/rtmp/events/BWEvent.html" target="">BWEvent</a></div></div><div class="detailSectionHeader"> Event Detail </div><a name="event:attempt"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">attempt</td><td class="detailHeaderType"> Event </td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../gauthier/net/rtmp/events/AttemptEvent.html"><code>gauthier.net.rtmp.events.AttemptEvent</code></a><br/><span class="label">AttemptEvent.type property = </span><a href="../../../gauthier/net/rtmp/events/AttemptEvent.html#ATTEMPT"><code>gauthier.net.rtmp.events.AttemptEvent.ATTEMPT</code></a><br/><p></p><p></p><p>
+	 Dispatch si l'autoconnect est declaré à chaque tentative de connexion.
+	 
+	 </p>
+      la constante <code>ATTEMPT</code> definit le 
+      <code>type</code> de la propiété de l'objet event pour une une tentative de connexion.
+     
+      <p>Les propriété de l'objet event ont pour valeur:</p>
+      <table class="innertable" ><tr><th>Propriété</th><th>Valeur</th></tr><tr><td><code>bubbles</code></td><td>false</td></tr><tr><td><code>cancelable</code></td><td>false</td></tr><tr><td><code>attemptObject</code></td><td>un objet <code>Attempt</code></td></tr><tr><td><code>target</code></td><td>l'objet emetteur de l'evenement
+         </td></tr></table>
+     	<p><span class="label">See also</span></p><div class="seeAlso"><a href="../../../gauthier/net/rtmp/events/AttemptEvent.html" target="">AttemptEvent</a></div></div><a name="event:attempt_end"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">attempt_end</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../gauthier/net/rtmp/events/AttemptEvent.html"><code>gauthier.net.rtmp.events.AttemptEvent</code></a><br/><span class="label">AttemptEvent.type property = </span><a href="../../../gauthier/net/rtmp/events/AttemptEvent.html#ATTEMPT_END"><code>gauthier.net.rtmp.events.AttemptEvent.ATTEMPT_END</code></a><br/><p></p><p></p><p>
+	 Dispatch si l'autoconnect est declaré une fois le maximum de tentative atteint.
+	 
+	 </p>
+      la constante <code>ATTEMPT_END</code> definit le 
+      <code>type</code> de la propiété de l'objet event lorsque toute les tentatives de connexion sont finit.
+     
+      <p>Les propriété de l'objet event ont pour valeur:</p>
+      <table class="innertable" ><tr><th>Propriété</th><th>Valeur</th></tr><tr><td><code>bubbles</code></td><td>false</td></tr><tr><td><code>cancelable</code></td><td>false</td></tr><tr><td><code>attemptObject</code></td><td>un objet <code>Attempt</code></td></tr><tr><td><code>target</code></td><td>l'objet emetteur de l'evenement
+         </td></tr></table>
+     	<p><span class="label">See also</span></p><div class="seeAlso"><a href="../../../gauthier/net/rtmp/events/AttemptEvent.html" target="">AttemptEvent</a></div></div><a name="event:call_failed"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">call_failed</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../gauthier/net/rtmp/events/RTMPEvent.html"><code>gauthier.net.rtmp.events.RTMPEvent</code></a><br/><span class="label">RTMPEvent.type property = </span><a href="../../../gauthier/net/rtmp/events/RTMPEvent.html#CALL_FAILED"><code>gauthier.net.rtmp.events.RTMPEvent.CALL_FAILED</code></a><br/><p></p><p></p><p>
+	 Dispatch quand l'appel a la method a échoué.
+	 
+	 </p>
+      la constante <code>FlashMediaServerEvent.SHUTDOWN</code> definit le 
+      <code>type</code> de la propiété de l'objet event lorsque que la connection n'a pu appeler la methode distante via la method <code>call</code> <code>NetConnection.Call.Failed</code>.
+     
+      <p>Les propriété de l'objet event ont pour valeur:</p>
+      <table class="innertable" ><tr><th>Propriété</th><th>Valeur</th></tr><tr><td><code>bubbles</code></td><td>false</td></tr><tr><td><code>cancelable</code></td><td>false</td></tr><tr><td><code>info</code></td><td>un objet <code>Info</code></td></tr><tr><td><code>target</code></td><td>l'objet emetteur de l'evenement
+         </td></tr></table>
+     	<p><span class="label">See also</span></p><div class="seeAlso"><a href="../../../gauthier/net/rtmp/events/RTMPEvent.html" target="">RTMPEvent</a></div></div><a name="event:closed"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">closed</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../gauthier/net/rtmp/events/RTMPEvent.html"><code>gauthier.net.rtmp.events.RTMPEvent</code></a><br/><span class="label">RTMPEvent.type property = </span><a href="../../../gauthier/net/rtmp/events/RTMPEvent.html#CLOSED"><code>gauthier.net.rtmp.events.RTMPEvent.CLOSED</code></a><br/><p></p><p></p><p>
+	 Dispatch quand la connexion se ferme.
+	 
+	 </p>
+      la constante <code>FlashMediaServerEvent.SHUTDOWN</code> definit le 
+      <code>type</code> de la propiété de l'objet event lorsque la connection se ferme <code>NetConnection.Connect.Closed</code>.
+     
+      <p>Les propriété de l'objet event ont pour valeur:</p>
+      <table class="innertable" ><tr><th>Propriété</th><th>Valeur</th></tr><tr><td><code>bubbles</code></td><td>false</td></tr><tr><td><code>cancelable</code></td><td>false</td></tr><tr><td><code>info</code></td><td>un objet <code>Info</code></td></tr><tr><td><code>target</code></td><td>l'objet emetteur de l'evenement
+         </td></tr></table>
+     	<p><span class="label">See also</span></p><div class="seeAlso"><a href="../../../gauthier/net/rtmp/events/RTMPEvent.html" target="">RTMPEvent</a></div></div><a name="event:failed"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">failed</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../gauthier/net/rtmp/events/RTMPEvent.html"><code>gauthier.net.rtmp.events.RTMPEvent</code></a><br/><span class="label">RTMPEvent.type property = </span><a href="../../../gauthier/net/rtmp/events/RTMPEvent.html#FAILED"><code>gauthier.net.rtmp.events.RTMPEvent.FAILED</code></a><br/><p></p><p></p><p>
+	 Dispatch quand la connexion a échoué.
+	 
+	 </p>
+      la constante <code>FlashMediaServerEvent.SHUTDOWN</code> definit le 
+      <code>type</code> de la propiété de l'objet event lorsque l'application n'a pas pu aboutir <code>NetConnection.Connect.Failed</code>.
+     
+      <p>Les propriété de l'objet event ont pour valeur:</p>
+      <table class="innertable" ><tr><th>Propriété</th><th>Valeur</th></tr><tr><td><code>bubbles</code></td><td>false</td></tr><tr><td><code>cancelable</code></td><td>false</td></tr><tr><td><code>info</code></td><td>un objet <code>Info</code></td></tr><tr><td><code>target</code></td><td>l'objet emetteur de l'evenement
+         </td></tr></table>
+     	<p><span class="label">See also</span></p><div class="seeAlso"><a href="../../../gauthier/net/rtmp/events/RTMPEvent.html" target="">RTMPEvent</a></div></div><a name="event:on_bw"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">on_bw</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../gauthier/net/rtmp/events/BWEvent.html"><code>gauthier.net.rtmp.events.BWEvent</code></a><br/><span class="label">BWEvent.type property = </span><a href="../../../gauthier/net/rtmp/events/BWEvent.html#ON_BW"><code>gauthier.net.rtmp.events.BWEvent.ON_BW</code></a><br/><p></p><p></p><p>
+	 Dispatch lors d'une detection automatique de la bande passante.
+	 
+	 </p>
+	      la constante <code>ON_BW</code> definit le 
+	      <code>type</code> de l'event lros d'une detection de la bande passante.
+	     
+	      <p>Les propriété de l'objet event ont pour valeur:</p>
+	      <table class="innertable" ><tr><th>Propriété</th><th>Valeur</th></tr><tr><td><code>bubbles</code></td><td>false</td></tr><tr><td><code>cancelable</code></td><td>false</td></tr><tr><td><code>bwObject</code></td><td>un objet <code>Bandwidth</code></td></tr><tr><td><code>target</code></td><td>l'objet emetteur de l'evenement
+	         </td></tr></table>
+	     	<p><span class="label">See also</span></p><div class="seeAlso"><a href="../../../gauthier/net/rtmp/events/BWEvent.html" target="">BWEvent</a></div></div><a name="event:rejected"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">rejected</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../gauthier/net/rtmp/events/RTMPEvent.html"><code>gauthier.net.rtmp.events.RTMPEvent</code></a><br/><span class="label">RTMPEvent.type property = </span><a href="../../../gauthier/net/rtmp/events/RTMPEvent.html#REJECTED"><code>gauthier.net.rtmp.events.RTMPEvent.REJECTED</code></a><br/><p></p><p></p><p>
+	 Dispatch quand la connexion est rejeté.
+	 
+	 </p>
+      la constante <code>FlashMediaServerEvent.REJECTED</code> definit le 
+      <code>type</code> de la propiété de l'objet event pour une connection rejeté par le server rtmp <code>NetConnection.Connect.Rejected</code>.
+     
+      <p>Les propriété de l'objet event ont pour valeur:</p>
+      <table class="innertable" ><tr><th>Propriété</th><th>Valeur</th></tr><tr><td><code>bubbles</code></td><td>false</td></tr><tr><td><code>cancelable</code></td><td>false</td></tr><tr><td><code>info</code></td><td>un objet <code>Info</code></td></tr><tr><td><code>target</code></td><td>l'objet emetteur de l'evenement
+         </td></tr></table>
+     	<p><span class="label">See also</span></p><div class="seeAlso"><a href="../../../gauthier/net/rtmp/events/RTMPEvent.html" target="">RTMPEvent</a></div></div><a name="event:shutdown"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">shutdown</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../gauthier/net/rtmp/events/RTMPEvent.html"><code>gauthier.net.rtmp.events.RTMPEvent</code></a><br/><span class="label">RTMPEvent.type property = </span><a href="../../../gauthier/net/rtmp/events/RTMPEvent.html#SHUTDOWN"><code>gauthier.net.rtmp.events.RTMPEvent.SHUTDOWN</code></a><br/><p></p><p></p><p>
+	 Dispatch quand l'application est dechargé.
+	 
+	 </p>
+      la constante <code>FlashMediaServerEvent.SHUTDOWN</code> definit le 
+      <code>type</code> de la propiété de l'objet event lorsque l'application du server rtmp s'arrete <code>NetConnection.Connect.AppShutdown</code>.
+     
+      <p>Les propriété de l'objet event ont pour valeur:</p>
+      <table class="innertable" ><tr><th>Propriété</th><th>Valeur</th></tr><tr><td><code>bubbles</code></td><td>false</td></tr><tr><td><code>cancelable</code></td><td>false</td></tr><tr><td><code>info</code></td><td>un objet <code>Info</code></td></tr><tr><td><code>target</code></td><td>l'objet emetteur de l'evenement
+         </td></tr></table>
+     	<p><span class="label">See also</span></p><div class="seeAlso"><a href="../../../gauthier/net/rtmp/events/RTMPEvent.html" target="">RTMPEvent</a></div></div><a name="event:success"></a><table class="detailHeader" cellpadding="0" cellspacing="0"><tr><td class="detailHeaderName">success</td><td class="detailHeaderType"> Event </td><td class="detailHeaderRule">&nbsp;</td></tr></table><div class="detailBody"><span class="label">Event Object Type: </span><a href="../../../gauthier/net/rtmp/events/RTMPEvent.html"><code>gauthier.net.rtmp.events.RTMPEvent</code></a><br/><span class="label">RTMPEvent.type property = </span><a href="../../../gauthier/net/rtmp/events/RTMPEvent.html#SUCCESS"><code>gauthier.net.rtmp.events.RTMPEvent.SUCCESS</code></a><br/><p></p><p></p><p>
+	 Dispatch quand la connexion est reussit.
+	 
+	 </p>
+      la constante <code>FlashMediaServerEvent.SUCCESS</code> definit le 
+      <code>type</code> de la propiété de l'objet event pour une connection réussit <code>NetConnection.Connect.Success</code>.
+     
+      <p>Les propriété de l'objet event ont pour valeur:</p>
+      <table class="innertable" ><tr><th>Propriété</th><th>Valeur</th></tr><tr><td><code>bubbles</code></td><td>false</td></tr><tr><td><code>cancelable</code></td><td>false</td></tr><tr><td><code>info</code></td><td>un objet <code>Info</code></td></tr><tr><td><code>target</code></td><td>l'objet emetteur de l'evenement
+         </td></tr></table>
+     	<p><span class="label">See also</span></p><div class="seeAlso"><a href="../../../gauthier/net/rtmp/events/RTMPEvent.html" target="">RTMPEvent</a></div></div><br/><br/><hr><br/><p></p><center class="copyright"><footer></footer><br/>Mercredi Juillet 6 2011, 03:05 PM +02:00  </center></div></body></html><!--<br/>Mercredi Juillet 6 2011, 03:05 PM +02:00  -->
